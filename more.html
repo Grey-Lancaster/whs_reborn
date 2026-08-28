@@ -155,5 +155,19 @@
 </script>
 
 </div>
+<script>
+(function(){
+  var loc = '';
+  function ping(){
+    if (!navigator.sendBeacon) return;
+    navigator.sendBeacon('https://papalanc.com/whs/hit?path=' + encodeURIComponent(location.pathname) + '&ref=' + encodeURIComponent(document.referrer || '') + '&loc=' + encodeURIComponent(loc) + '&t=' + Date.now());
+  }
+  fetch('https://get.geojs.io/v1/ip/geo.json')
+    .then(function(r){ return r.json(); })
+    .then(function(d){ loc = [d.city, d.region, d.country].filter(Boolean).join(', '); })
+    .catch(function(){})
+    .then(ping);
+})();
+</script>
 </body>
 </html>
