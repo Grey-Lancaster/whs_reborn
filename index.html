@@ -35,35 +35,13 @@
   }
   .stage ruffle-embed{display:block;width:100%;height:100%;position:absolute;inset:0;}
   .note{font-size:12.5px;color:var(--ink-dim);margin-top:44px;line-height:1.6;}
-  .note a{color:var(--gold-bright);}
-  .extras{margin-top:44px;}
-  .extras h2{font-size:15px;font-weight:600;margin:0 0 6px 0;color:var(--ink);}
-  .extras p.desc{font-size:13px;color:var(--ink-dim);margin:0 0 12px 0;max-width:60ch;line-height:1.5;}
-  .extras ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px;}
-  .extras a{
-    color:var(--ink);text-decoration:none;font-size:13.5px;
-    padding:8px 12px;border:1px solid var(--line);border-radius:8px;
-    display:inline-block;transition:border-color 0.15s ease,color 0.15s ease;
-  }
-  .extras a:hover{border-color:var(--gold);color:var(--gold-bright);}
-  .gallery{margin-top:44px;}
-  .gallery h2{font-size:15px;font-weight:600;margin:0 0 6px 0;color:var(--ink);}
-  .gallery p.desc{font-size:13px;color:var(--ink-dim);margin:0 0 16px 0;max-width:60ch;line-height:1.5;}
-  .gallery-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px;}
-  .gallery-item{
-    border:1px solid var(--line);border-radius:10px;overflow:hidden;
-    background:rgba(255,255,255,0.02);
-  }
-  .gallery-item img{display:block;width:100%;height:auto;}
-  .gallery-cap{padding:10px 12px;}
-  .gallery-cap .line{font-size:12.5px;color:var(--ink);line-height:1.4;margin:0 0 4px 0;}
-  .gallery-cap .tag{font-size:11px;color:var(--ink-dim);margin:0;}
-
+  .note a{color:var(--gold-bright);text-decoration:none;border-bottom:1px solid var(--line);}
+  .note a:hover{color:var(--gold);border-color:var(--gold);}
 </style>
 </head>
 <body>
 <div class="wrap">
-<script>window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={autoplay:"on",unmuteOverlay:"hidden",splashScreen:false,preloader:false};</script><script src="https://unpkg.com/@ruffle-rs/ruffle"></script><h1>Windows Home Server, 2007</h1><p class="sub">Two surviving Flash pieces from Microsoft’s original Windows Home Server launch campaign, pulled from the Wayback Machine and replayed here with Ruffle.</p>
+<script>window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={autoplay:"on",unmuteOverlay:"hidden",splashScreen:false,preloader:false};</script><script src="https://unpkg.com/@ruffle-rs/ruffle"></script><h1>Windows Home Server, 2007</h1><p class="sub">Recovered from the Wayback Machine and replayed here with Ruffle.</p>
   <div class="player">
     <h2>The House Demo</h2>
     <p class="desc">The interactive walkthrough of a home wired up with Windows Home Server — room by room.</p>
@@ -71,93 +49,7 @@
       <embed src="/Microsoft-Home-Server-House.swf" width="700" height="450">
     </div>
   </div>
-  <div class="player">
-    <h2>Hero Animation</h2>
-    <p class="desc">The animated banner from the Windows Home Server product page.</p>
-    <div class="stage" style="aspect-ratio:970/300;">
-      <embed src="/hero_windowshomeserver.swf" width="970" height="300" id="whs-hero-embed">
-    </div>
-  </div><p class="note">Recovered from archived captures of microsoft.com/windows/products/winfamily/windowshomeserver/. The original campaign’s "Stop Digital Amnesia" teaser site did not survive — only these two demo assets from the main product page did.</p><div class="extras"><h2>Also recovered, not wired into the house demo</h2><p class="desc">Same archived directory, same era — these four just aren't linked from any hotspot in the house build.</p><ul><li><a href="/play/Video-Appliance.html">Appliance — Video-Appliance.swf</a></li><li><a href="/play/Video-File-Replication.html">File Replication — Video-File-Replication.swf</a></li><li><a href="/play/Video-Photo.html">Photo — Video-Photo.swf</a></li><li><a href="/play/Video-Photo-Backup.html">Photo Backup — Video-Photo-Backup.swf</a></li></ul></div><div class="gallery"><h2>The homepage promo slot, over time</h2><p class="desc">Not a live carousel — Microsoft just swapped this image as the campaign evolved, plus separate versions for partner sub-pages and even an unrelated developer contest that reused the same slot.</p><div class="gallery-grid">
-    <div class="gallery-item">
-      <img src="/banners/whs_home_banner1.jpg" alt="Simplify the way you keep and share your family's memories.">
-      <div class="gallery-cap">
-        <p class="line">Simplify the way you keep and share your family's memories.</p>
-        <p class="tag">Earliest hero banner</p>
-      </div>
-    </div>
-    <div class="gallery-item">
-      <img src="/banners/whs_home_banner1a.jpg" alt="Share memories and more from virtually anywhere.">
-      <div class="gallery-cap">
-        <p class="line">Share memories and more from virtually anywhere.</p>
-        <p class="tag">Replaced banner1 later in the run</p>
-      </div>
-    </div>
-    <div class="gallery-item">
-      <img src="/banners/whs_home_banner2.jpg" alt="Buy your home server today.">
-      <div class="gallery-cap">
-        <p class="line">Buy your home server today.</p>
-        <p class="tag">HP hardware cross-sell slot</p>
-      </div>
-    </div>
-    <div class="gallery-item">
-      <img src="/banners/whs_home_banner3.jpg" alt="A server belongs in the office... or does it?">
-      <div class="gallery-cap">
-        <p class="line">A server belongs in the office... or does it?</p>
-        <p class="tag">Teaser for the Stay-at-Home Servers debate</p>
-      </div>
-    </div>
-    <div class="gallery-item">
-      <img src="/banners/home_banner_debate.jpg" alt="STAY-AT-HOME SERVERS — America's Talking">
-      <div class="gallery-cap">
-        <p class="line">STAY-AT-HOME SERVERS — America's Talking</p>
-        <p class="tag">Full-size cable-news parody for the same debate</p>
-      </div>
-    </div>
-    <div class="gallery-item">
-      <img src="/banners/whs_home_banner_mommy.jpg" alt="Mommy, Why is There a Server in the House?">
-      <div class="gallery-cap">
-        <p class="line">Mommy, Why is There a Server in the House?</p>
-        <p class="tag">Fake children's-book cover</p>
-      </div>
-    </div>
-    <div class="gallery-item">
-      <img src="/banners/hp_page_banner.jpg" alt="Learn how to access, share and organize your digital life.">
-      <div class="gallery-cap">
-        <p class="line">Learn how to access, share and organize your digital life.</p>
-        <p class="tag">Ran on HP's own sub-page</p>
-      </div>
-    </div>
-    <div class="gallery-item">
-      <img src="/banners/banner_code2fame.jpg" alt="Code2Fame Challenge — Killer Add-Ins = Fame and Fortune!">
-      <div class="gallery-cap">
-        <p class="line">Code2Fame Challenge — Killer Add-Ins = Fame and Fortune!</p>
-        <p class="tag">Developer contest, same slot</p>
-      </div>
-    </div>
-    <div class="gallery-item">
-      <img src="/banners/cust_eval_banner.jpg" alt="Now it's easy to keep and share documents, photos, videos, and music.">
-      <div class="gallery-cap">
-        <p class="line">Now it's easy to keep and share documents, photos, videos, and music.</p>
-        <p class="tag">A 2011 refresh, years later</p>
-      </div>
-    </div></div></div>
-<script>
-(function(){
-  function restart(){
-    var el = document.getElementById('whs-hero-embed');
-    if (!el) return;
-    var fresh = document.createElement('embed');
-    fresh.id = 'whs-hero-embed';
-    fresh.setAttribute('src', el.getAttribute('src'));
-    fresh.setAttribute('width', el.getAttribute('width'));
-    fresh.setAttribute('height', el.getAttribute('height'));
-    el.replaceWith(fresh);
-    setTimeout(restart, 18000);
-  }
-  setTimeout(restart, 26000);
-})();
-</script>
-
+<p class="note">Recovered from archived captures of microsoft.com/windows/products/winfamily/windowshomeserver/. &mdash; <a href="/more.html">Other stuff salvaged from Wayback &rarr;</a></p>
 </div>
 </body>
 </html>

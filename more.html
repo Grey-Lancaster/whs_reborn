@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Other stuff salvaged from Wayback</title>
+<style>
+  :root{
+    --bg-1:#0a0f1e; --bg-2:#111827; --bg-3:#0d1a2e;
+    --gold:#c9a84c; --gold-bright:#e8c96a;
+    --ink:#e2e8f0; --ink-dim:#94a3b8; --line:#334155;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; min-height:100vh; color:var(--ink);
+    font-family:'Segoe UI',Arial,sans-serif;
+    background:linear-gradient(160deg,var(--bg-1) 0%,var(--bg-2) 60%,var(--bg-3) 100%);
+    padding:clamp(24px,5vw,64px) 20px 80px;
+  }
+  .wrap{max-width:760px;margin:0 auto;}
+  a{color:inherit;}
+  .back{display:inline-block;margin-bottom:20px;text-decoration:none;color:var(--gold-bright);}
+  .back:hover{color:var(--gold);}
+  h1{
+    font-size:clamp(1.7rem,4vw,2.3rem);
+    font-weight:600;letter-spacing:0.01em;margin:0 0 8px 0;
+    text-wrap:balance;
+  }
+  .sub{color:var(--ink-dim);font-size:15px;margin:0 0 40px 0;max-width:60ch;line-height:1.55;}
+
+  .player{margin:0 0 44px 0;}
+  .player h2{font-size:17px;font-weight:600;margin:0 0 4px 0;color:var(--ink);}
+  .player .desc{font-size:13.5px;color:var(--ink-dim);margin:0 0 14px 0;max-width:60ch;line-height:1.5;}
+  .stage{
+    border:1px solid var(--line);border-radius:12px;overflow:hidden;
+    background:#ccc;line-height:0;position:relative;
+  }
+  .stage ruffle-embed{display:block;width:100%;height:100%;position:absolute;inset:0;}
+  .extras{margin-top:44px;}
+  .extras h2{font-size:15px;font-weight:600;margin:0 0 6px 0;color:var(--ink);}
+  .extras p.desc{font-size:13px;color:var(--ink-dim);margin:0 0 12px 0;max-width:60ch;line-height:1.5;}
+  .extras ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px;}
+  .extras a{
+    color:var(--ink);text-decoration:none;font-size:13.5px;
+    padding:8px 12px;border:1px solid var(--line);border-radius:8px;
+    display:inline-block;transition:border-color 0.15s ease,color 0.15s ease;
+  }
+  .extras a:hover{border-color:var(--gold);color:var(--gold-bright);}
+  .gallery{margin-top:44px;}
+  .gallery h2{font-size:15px;font-weight:600;margin:0 0 6px 0;color:var(--ink);}
+  .gallery p.desc{font-size:13px;color:var(--ink-dim);margin:0 0 16px 0;max-width:60ch;line-height:1.5;}
+  .gallery-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px;}
+  .gallery-item{
+    border:1px solid var(--line);border-radius:10px;overflow:hidden;
+    background:rgba(255,255,255,0.02);
+  }
+  .gallery-item img{display:block;width:100%;height:auto;}
+  .gallery-cap{padding:10px 12px;}
+  .gallery-cap .line{font-size:12.5px;color:var(--ink);line-height:1.4;margin:0 0 4px 0;}
+  .gallery-cap .tag{font-size:11px;color:var(--ink-dim);margin:0;}
+</style>
+</head>
+<body>
+<div class="wrap">
+<script>window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={autoplay:"on",unmuteOverlay:"hidden",splashScreen:false,preloader:false};</script><script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+<a class="back" href="/">&larr; Back to Windows Home Server, 2007</a>
+<h1>Other stuff salvaged from Wayback</h1>
+<p class="sub">Everything else recovered from the same 2007 Windows Home Server launch campaign — not part of the interactive house, but worth keeping.</p>
+  <div class="player">
+    <h2>Hero Animation</h2>
+    <p class="desc">The animated banner from the Windows Home Server product page.</p>
+    <div class="stage" style="aspect-ratio:970/300;">
+      <embed src="/hero_windowshomeserver.swf" width="970" height="300" id="whs-hero-embed">
+    </div>
+  </div>
+<div class="extras"><h2>Also recovered, not wired into the house demo</h2><p class="desc">Same archived directory, same era — these four just aren't linked from any hotspot in the house build.</p><ul><li><a href="/play/Video-Appliance.html">Appliance — Video-Appliance.swf</a></li><li><a href="/play/Video-File-Replication.html">File Replication — Video-File-Replication.swf</a></li><li><a href="/play/Video-Photo.html">Photo — Video-Photo.swf</a></li><li><a href="/play/Video-Photo-Backup.html">Photo Backup — Video-Photo-Backup.swf</a></li></ul></div><div class="gallery"><h2>The homepage promo slot, over time</h2><p class="desc">Not a live carousel — Microsoft just swapped this image as the campaign evolved, plus separate versions for partner sub-pages and even an unrelated developer contest that reused the same slot.</p><div class="gallery-grid">
+    <div class="gallery-item">
+      <img src="/banners/whs_home_banner1.jpg" alt="Simplify the way you keep and share your family's memories.">
+      <div class="gallery-cap">
+        <p class="line">Simplify the way you keep and share your family's memories.</p>
+        <p class="tag">Earliest hero banner</p>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <img src="/banners/whs_home_banner1a.jpg" alt="Share memories and more from virtually anywhere.">
+      <div class="gallery-cap">
+        <p class="line">Share memories and more from virtually anywhere.</p>
+        <p class="tag">Replaced banner1 later in the run</p>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <img src="/banners/whs_home_banner2.jpg" alt="Buy your home server today.">
+      <div class="gallery-cap">
+        <p class="line">Buy your home server today.</p>
+        <p class="tag">HP hardware cross-sell slot</p>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <img src="/banners/whs_home_banner3.jpg" alt="A server belongs in the office... or does it?">
+      <div class="gallery-cap">
+        <p class="line">A server belongs in the office... or does it?</p>
+        <p class="tag">Teaser for the Stay-at-Home Servers debate</p>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <img src="/banners/home_banner_debate.jpg" alt="STAY-AT-HOME SERVERS — America's Talking">
+      <div class="gallery-cap">
+        <p class="line">STAY-AT-HOME SERVERS — America's Talking</p>
+        <p class="tag">Full-size cable-news parody for the same debate</p>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <img src="/banners/whs_home_banner_mommy.jpg" alt="Mommy, Why is There a Server in the House?">
+      <div class="gallery-cap">
+        <p class="line">Mommy, Why is There a Server in the House?</p>
+        <p class="tag">Fake children's-book cover</p>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <img src="/banners/hp_page_banner.jpg" alt="Learn how to access, share and organize your digital life.">
+      <div class="gallery-cap">
+        <p class="line">Learn how to access, share and organize your digital life.</p>
+        <p class="tag">Ran on HP's own sub-page</p>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <img src="/banners/banner_code2fame.jpg" alt="Code2Fame Challenge — Killer Add-Ins = Fame and Fortune!">
+      <div class="gallery-cap">
+        <p class="line">Code2Fame Challenge — Killer Add-Ins = Fame and Fortune!</p>
+        <p class="tag">Developer contest, same slot</p>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <img src="/banners/cust_eval_banner.jpg" alt="Now it's easy to keep and share documents, photos, videos, and music.">
+      <div class="gallery-cap">
+        <p class="line">Now it's easy to keep and share documents, photos, videos, and music.</p>
+        <p class="tag">A 2011 refresh, years later</p>
+      </div>
+    </div></div></div>
+<script>
+(function(){
+  function restart(){
+    var el = document.getElementById('whs-hero-embed');
+    if (!el) return;
+    var fresh = document.createElement('embed');
+    fresh.id = 'whs-hero-embed';
+    fresh.setAttribute('src', el.getAttribute('src'));
+    fresh.setAttribute('width', el.getAttribute('width'));
+    fresh.setAttribute('height', el.getAttribute('height'));
+    el.replaceWith(fresh);
+    setTimeout(restart, 18000);
+  }
+  setTimeout(restart, 26000);
+})();
+</script>
+
+</div>
+</body>
+</html>
